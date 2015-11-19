@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Восточный Банк</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/currency.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+</head>
+
+<body >
+    <div class="container-fluid container-fluid-content" id="head-click">
+        <div class="row header">
+            <div class="col-lg-3 col-lg-offset-1 col-md-3 col-sm-3 col-xs-3 clear-logo"><img src="image/logo.png" alt="" class="logo"></div>
+            <div class="col-lg-4 col-lg-offset-3 col-md-4 col-md-offset-4 col-sm-5 col-sm-offset-3 col-xs-5 col-xs-offset-3">
+              <div class="row auth-text">
+                   <div class="container-fluid"><b>Пользователь: </b> Иванов Иван Иванович</div>
+                   <div class="container-fluid"><b>Отделение:</b> ДО 0200</div>
+              </div>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1  col-xs-1">
+                <a href="auth.html" class="btn btn-link btn-lg btn-md btn-exit"><img src="image/exit.png" alt="" class="exit"></a>
+            </div>
+
+        </div>
+        <div class="row row-content">
+            <div class="col-lg-3 col-lg-offset-1 col-md-3 col-sm-3 col-xs-3  menu">
+                <div class="row row-button">
+                    <a class="btn btn-default btn-lg btn-block menu-element" href="index.html">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-9 col-md-9 col-sm-8 col-xs-10" >Курсы валют</div>
+                                <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-2 col-xs-2"><img src="image/select-right.png" alt="" class="right-arrow"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="btn btn-default btn-lg btn-block menu-element" href="index-prior-approval.html">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-9 col-md-9 col-sm-8">Персональные предложения</div>
+                                <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-2"><img src="image/select-right.png" alt="" class="right-arrow"></div>
+                            </div>
+                        </div>                     
+                    </a>
+                    <a class="btn btn-default btn-lg btn-block menu-element" href="index-complaints.html">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-9 col-md-9 col-sm-8">Оформить жалобу</div>
+                                <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-2"><img src="image/select-right.png" alt="" class="right-arrow"></div>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="btn btn-default btn-lg btn-block menu-element" href="index-contact.html">
+                         <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-9 col-md-9 col-sm-8">Контакты третьих лиц</div>
+                                <div class="col-lg-2 col-lg-offset-1 col-md-2 col-md-offset-1 col-sm-2"><img src="image/select-right.png" alt="" class="right-arrow"></div>
+                            </div>
+                        </div>                     
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-9 col-sm-9 col-xs-9 content">
+                <div class="row sub-content">
+                    <div class="col-lg-1 col-md-1 col-sm-1 border-div">
+                    </div>
+                    <div class="col-lg-11 col-md-11 col-sm-11 page-content" >
+                        <div class="text-center">
+                            <h1>Курсы валют  (ДО <span id="do-name">0200</span>)</h1>
+                            <br>
+                            <br>
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg-5 col-lg-offset-7">
+
+                                        <div class="row">
+                                            <div class="col-lg-6  col-md-6">
+                                                <div class="row">
+                                                    <div class="col-lg name-input">Город</div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg">
+                                                        <input type="text"  placeholder="Хабаровск" value="Хабаровск" class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1">
+                                                <div class="row">
+                                                    <div class="col-lg name-input">Отделение</div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-lg">
+                                                        <select name="do" id="do-select" onchange="document.getElementById('do-name').innerHTML = this.options[this.selectedIndex].value" class="form-control">
+                                                            <option value="0200">0200</option>
+                                                            <option value="0201">0201</option>
+                                                            <option value="0202">0202</option>
+                                                            <option value="0203">0203</option>
+                                                            <option value="0204">0204</option>
+                                                            <option value="0205">0205</option>
+                                                            <option value="0206">0206</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <table class="table table-condensed">
+                                <tr class="head-tbl">
+                                    <td>16.11.2015</td>
+                                    <td>Покупка</td>
+                                    <td>Продажа</td>
+                                    <td>ЦБ</td>
+                                </tr>
+                                <tr>
+                                    <td>USD</td>
+                                    <td>64.60</td>
+                                    <td>68.60</td>
+                                    <td>66.6343</td>
+                                </tr>
+                                <tr>
+                                    <td>EUR</td>
+                                    <td>69.50</td>
+                                    <td>73.50</td>
+                                    <td>71.8184</td>
+                                </tr>
+                                <tr>
+                                    <td>CNY</td>
+                                    <td>10.30</td>
+                                    <td>10.70</td>
+                                    <td>10.4546</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid footer-container">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 footer">
+                <div class="row footer-content">
+                    <div class="col-lg-5 col-md-6 ">
+                        © ПАО КБ «Восточный», 2006-2015
+                        <br>Генеральная лицензия Банка России №1460 от 24.10.2014 г.
+                    </div>
+                    <div class="col-lg-3 col-lg-offset-3 col-md-4 col-md-offset-2">
+                        Информационный центр:
+                        <strong style="font-size:1.125rem;">8-800-100-7-100</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

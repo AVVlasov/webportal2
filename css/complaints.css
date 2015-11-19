@@ -1,0 +1,18 @@
+
+.form-control{
+    border:1px solid #cdd7e1;
+    border-radius: 0;
+}
+
+
+
+.head-tbl{
+    text-transform: uppercase;
+    color: #004997;
+}
+.find-result-title{
+    margin-top: 20px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+
+}
