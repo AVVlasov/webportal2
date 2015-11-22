@@ -26,12 +26,7 @@ h1 {
     color: #6b7b8d;
     text-align: center;
 }
-.header{
-  padding: 20px 0;
-}
-.clear-logo{
-    padding: 0;
-}
+
 .login-form{
     margin-top: 40px;
     padding: 40px 40px;
@@ -43,13 +38,8 @@ h1 {
 .ico{
     padding: 5px 0;
     padding-right: 7px;
-
     border-right: 1px solid #d7e2ec;
 }
-.icon-user{
-    padding-right: 10px;
-}
-
 
 .login-element{
     font-family: "Open Sans", sans-serif;
@@ -72,29 +62,10 @@ input{
     width: 100%;
     padding-top: 5px;
 }
-.input-user, .input-password{
-    padding-right: 0;
-}
+
 
 .btn-submit{
     border: 0;
     background: #004997;
     margin-top: 20px;
-}
-
-.footer{
-    position: absolute;
-    bottom: 0;
-    background: #004997;;
-    height: 100px;
-
-}
-.footer-content{
-   margin-top: 20px;
-    color: white;
-}
-.footer-container{
-    padding: 0;
-    margin: 0;
-    bottom: 0;
 }

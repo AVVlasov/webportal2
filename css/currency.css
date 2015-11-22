@@ -1,7 +1,30 @@
-.table-condensed{
-	width: 100%;
-	font-size: 30px !important;	
+.currency-setting{
+    margin: 0;
+    padding: 0;
 }
+
+.city-block,.do-block{
+    padding: 10px 10px;
+}
+
+#do-select{
+    width: 90%;
+}
+.currency-header-text{
+    text-align: left;
+    text-transform: uppercase;
+}
+.table-data{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.table-condensed{
+	width: 90%;
+	font-size: 30px !important;
+
+
+}
+
 .head-tbl{
 	font-size: 20px !important;	
 }
