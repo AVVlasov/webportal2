@@ -20,15 +20,102 @@
 <body>
 <div class="container-fluid container-fluid-content">
     <div class="row header">
-        <div class="col-lg-11 col-md-11 col-sm-11 col-xs-11">
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 auth">
             <div class="row auth-text">
-                <div class="container-fluid">Иванов Иван Иванович</div>
-                <div class="container-fluid"><b>Отделение:</b> ДО 0200</div>
+                <div class="container-fluid clear-pading">Иванов Иван Иванович</div>
+                <div class="container-fluid clear-pading"><b>Отделение:</b> ДО 0200</div>
             </div>
         </div>
-        <div class="col-lg-1 col-md-1 col-sm-1  col-xs-1">
-            <a href="auth.html" class="btn btn-link btn-lg btn-md btn-exit"><img src="image/exit.png" alt=""
-                                                                                 class="exit"></a>
+        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 client-block">
+            <div class="row person-block">
+                <button class="btn btn-link btn-lg btn-block dropdown-toggle header-person-dropdown" data-toggle="dropdown">
+                    <div class="container-fluid clear-pading2">
+                        <div class="row clear-pading2">
+                            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 client-desc client-title-base"><div class="row row-border-client-title"><div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 client-title">КЛИЕНТ</div>
+                                <div class="col-lg-1 col-lg-offset-1 col-md-1 col-md-offset-1 col-sm-1 col-sm-offset-1 col-xs-1 col-xs-offset-1 border-client-title"></div> </div></div>
+                            <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 client-desc client-fio">Иван Иван Иванович</div>
+                            <div class="col-lg-3  col-md-3  col-sm-3 col-xs-3 client-desc client-carret"><img src="image/select.png" alt="" class="down-arrow"></div>
+                        </div>
+                    </div>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li>
+                        <div id="hide-person-info" class="row person-content collapse in">
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+
+                                <!--блок фамилии начало-->
+                                <div class="row person-control-title">
+                                    <div class="col-lg col-md col-sm col-xs name-input">Фамилия клиента</div>
+                                </div>
+                                <div class="row person-control">
+                                    <div class="col-lg col-md col-sm col-xs">
+                                        <input type="text" class="form-control" id="test" value="Тестов">
+                                    </div>
+                                </div>
+                                <!--блок фамилии конец-->
+
+                                <!--блок имени начало-->
+                                <div class="row person-control-title">
+                                    <div class="col-lg col-md col-sm col-xs name-input">Имя клиента</div>
+                                </div>
+                                <div class="row person-control">
+                                    <div class="col-lg col-md col-sm col-xs">
+                                        <input type="text" class="form-control" value="Тест">
+                                    </div>
+                                </div>
+                                <!--блок имени конец-->
+
+                                <!--блок отчества начало-->
+                                <div class="row person-control-title">
+                                    <div class="col-lg col-md col-sm col-xs name-input">Отчество клиента</div>
+                                </div>
+                                <div class="row person-control">
+                                    <div class="col-lg col-md col-sm col-xs">
+                                        <input type="text" class="form-control" value="Тестович">
+                                    </div>
+                                </div>
+                                <!--блок отчества конец-->
+                            </div>
+
+                            <div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-5 col-xs-offset-1">
+                                <!--блок паспортные данные начало-->
+                                <div class="row person-control-title">
+                                    <div class="col-lg col-md col-sm col-xs name-input">Паспортные данные</div>
+                                </div>
+                                <div class="row person-control">
+                                    <div class="col-lg col-md col-sm col-xs">
+                                        <input type="text" class="form-control" value="1111 123456">
+                                    </div>
+                                </div>
+                                <!--блок паспортные данные конец-->
+
+                                <!--блок телефон начало-->
+                                <div class="row person-control-title">
+                                    <div class="col-lg col-md col-sm col-xs name-input">Телефон</div>
+                                </div>
+                                <div class="row person-control">
+                                    <div class="col-lg col-md col-sm col-xs">
+                                        <input type="text" class="form-control" value="921 1234567">
+                                    </div>
+                                </div>
+                                <!--блок телефон конец-->
+                            </div>
+
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 date-block">
+            <div class="row row-date">
+                <div class="full-date" >111</div>
+            </div>
+            <div class="row row-date">
+                <div class="short-date">222</div>
+            </div>
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+            <a href="auth.html" class="btn btn-link btn-lg btn-md btn-exit"><img src="image/exit.png" alt="" class="exit"></a>
         </div>
     </div>
 
@@ -39,8 +126,7 @@
                     <div class="container-fluid button-container">
                         <div class="row row-button">
                             <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 text-button">Курсы валют</div>
-                            <div class="col-lg-2  col-md-2 col-sm-2 col-xs-2 arrow-button"><img
-                                    src="image/select-right.png" alt="" class="right-arrow"></div>
+                            <div class="col-lg-2  col-md-2 col-sm-2 col-xs-2 arrow-button"><img src="image/select-right.png" alt="" class="right-arrow"></div>
                         </div>
                     </div>
                 </a>
@@ -50,8 +136,7 @@
                         <div class="row row-button">
                             <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 text-button">Предложения
                             </div>
-                            <div class="col-lg-2  col-md-2 col-sm-2 col-xs-2 arrow-button"><img
-                                    src="image/select-right.png" alt="" class="right-arrow"></div>
+                            <div class="col-lg-2  col-md-2 col-sm-2 col-xs-2 arrow-button"><img src="image/select-right.png" alt="" class="right-arrow"></div>
                         </div>
                     </div>
                 </a>
@@ -60,8 +145,7 @@
                     <div class="container-fluid button-container">
                         <div class="row row-button">
                             <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 text-button">Жалобы</div>
-                            <div class="col-lg-2  col-md-2 col-sm-2 col-xs-2 arrow-button"><img
-                                    src="image/select-right.png" alt="" class="right-arrow"></div>
+                            <div class="col-lg-2  col-md-2 col-sm-2 col-xs-2 arrow-button"><img src="image/select-right.png" alt="" class="right-arrow"></div>
                         </div>
                     </div>
                 </a>
@@ -70,8 +154,7 @@
                     <div class="container-fluid button-container">
                         <div class="row row-button">
                             <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10 text-button">Контакты</div>
-                            <div class="col-lg-2  col-md-2 col-sm-2 col-xs-2 arrow-button"><img
-                                    src="image/select-right.png" alt="" class="right-arrow"></div>
+                            <div class="col-lg-2  col-md-2 col-sm-2 col-xs-2 arrow-button"><img src="image/select-right.png" alt="" class="right-arrow"></div>
                         </div>
                     </div>
                 </a>
@@ -80,81 +163,7 @@
         </div>
 
         <div class="col-lg-8 col-md-10 col-sm-10 col-xs-10 content">
-            <div class="row person-block">
-                <button class="btn btn-link btn-lg btn-block header-collapsed" data-toggle="collapse"
-                        data-target="#hide-person-info">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">Персональные данные</div>
-                            <div class="col-lg-2  col-md-2  col-sm-2 col-xs-2"><img
-                                    src="image/select.png" alt="" class="down-arrow"></div>
-                        </div>
-                    </div>
-                </button>
 
-                <div id="hide-person-info" class="row person-content collapse in">
-                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-
-                        <!--блок фамилии начало-->
-                        <div class="row person-control-title">
-                            <div class="col-lg col-md col-sm col-xs name-input">Фамилия клиента</div>
-                        </div>
-                        <div class="row person-control">
-                            <div class="col-lg col-md col-sm col-xs">
-                                <input type="text" class="form-control" id="test" value="Тестов">
-                            </div>
-                        </div>
-                        <!--блок фамилии конец-->
-
-                        <!--блок имени начало-->
-                        <div class="row person-control-title">
-                            <div class="col-lg col-md col-sm col-xs name-input">Имя клиента</div>
-                        </div>
-                        <div class="row person-control">
-                            <div class="col-lg col-md col-sm col-xs">
-                                <input type="text" class="form-control" value="Тест">
-                            </div>
-                        </div>
-                        <!--блок имени конец-->
-
-                        <!--блок отчества начало-->
-                        <div class="row person-control-title">
-                            <div class="col-lg col-md col-sm col-xs name-input">Отчество клиента</div>
-                        </div>
-                        <div class="row person-control">
-                            <div class="col-lg col-md col-sm col-xs">
-                                <input type="text" class="form-control" value="Тестович">
-                            </div>
-                        </div>
-                        <!--блок отчества конец-->
-                    </div>
-
-                    <div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-5 col-xs-offset-1">
-                        <!--блок паспортные данные начало-->
-                        <div class="row person-control-title">
-                            <div class="col-lg col-md col-sm col-xs name-input">Паспортные данные</div>
-                        </div>
-                        <div class="row person-control">
-                            <div class="col-lg col-md col-sm col-xs">
-                                <input type="text" class="form-control" value="1111 123456">
-                            </div>
-                        </div>
-                        <!--блок паспортные данные конец-->
-
-                        <!--блок телефон начало-->
-                        <div class="row person-control-title">
-                            <div class="col-lg col-md col-sm col-xs name-input">Телефон</div>
-                        </div>
-                        <div class="row person-control">
-                            <div class="col-lg col-md col-sm col-xs">
-                                <input type="text" class="form-control" value="921 1234567">
-                            </div>
-                        </div>
-                        <!--блок телефон конец-->
-                    </div>
-
-                </div>
-            </div>
 
 
             <div class="col-lg-11 col-md-11 col-sm-11 page-content">
@@ -224,5 +233,51 @@
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+    var s;
+    var t=new Date();
+    var y=t.getFullYear();
+    var dd=t.getDate();
+    var mon=t.getMonth();
+
+    switch (mon)
+    {
+        case 0: s="января"; break;
+        case 1: s="февраля"; break;
+        case 2: s="марта"; break;
+        case 3: s="апреля"; break;
+        case 4: s="мае"; break;
+        case 5: s="июня"; break;
+        case 6: s="июля"; break;
+        case 7: s="августа"; break;
+        case 8: s="сентября"; break;
+        case 9: s="октября"; break;
+        case 10: s="ноября"; break;
+        case 11: s="декабря"; break;
+    }
+    var result=dd+" "+s+" "+y;
+    $('.full-date').html(result);
+
+    var d = new Date();
+
+    d.mygetDay = _mygetDay;
+
+    // Вернуть день недели по-русски
+    function _mygetDay()
+    {
+        var dayNames = new Array("воскресенье", "понедельник", "вторник",
+                "среда", "четверг", "п\ятница", "суббота");
+        return dayNames[this.getDay()];
+    }
+
+    $('.short-date').html(d.mygetDay());
+
+//alert($(document).width());
+   // alert($(document).height());
+
+</script>
+
 </body>
+
 </html>
