@@ -2,6 +2,35 @@
 phpinfo();
 
 
+Дан конфигурационный файл app.ini
+
+db.user = "user"
+db.password = "pass"
+debug = true
+app.s.e.r.v.e.r = 123
+test.test1 = 11
+
+слева в каждой строке расположены ключи - справа значения
+ключи разделяются знаком ".", могут быть a-z_0-9
+
+необходимо распарсить конф. файл, так чтобы на выходе получился ассоциативный массив со сгруппированными ключами
+
+array(
+	db => array(
+		user => "user",
+		password => "pass"
+	),
+	debug => true
+	app => array(
+		…
+	),
+      test => [
+		test1 => 11
+	]
+)
+
+
+
 $str = '
 db.user  = "user"
 db.password  = "pass"
